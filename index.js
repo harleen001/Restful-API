@@ -29,6 +29,7 @@ app.use((req,res,next)=>{
 
 // GET all users
 app.get('/api/Users', (req, res) => {
+    res.setHeader('myName',"Harleen Singh") //set header
     // Return JSON data
     return res.json(Users);
 });
